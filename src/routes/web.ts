@@ -4,7 +4,7 @@ let router = express.Router();
 
 let initWebRouter = (app: Express) => {
     router.get("/", (req: Request, res: Response) => {
-        return res.send("Hello world!")
+        res.render("HomePage.ejs")
     })
 
 
